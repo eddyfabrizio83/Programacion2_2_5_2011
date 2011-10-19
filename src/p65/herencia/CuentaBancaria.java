@@ -30,4 +30,23 @@ public class CuentaBancaria {
         if( monto < saldo )
             saldo -= monto;
     }
+    
+    public void registrarIntereses(){
+        saldo += saldo * tasaInteres;
+    }
+    
+    @Override
+    public String toString(){
+        String res= this.numCuenta + " - " +
+                this.nombre + " - " + this.saldo + " lps";
+        return res;
+    }
+    
+    public void imprimir(){
+        System.out.println(this);
+    }
+    
+    public void quienSoy(){
+        System.out.println("Soy el PAPA!");
+    }
 }
