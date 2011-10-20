@@ -20,5 +20,32 @@ public class Trabajador {
         nombre = n;
         genero = g;
     }
+    
+    public String getNombre(){
+        return nombre;
+    }
+    
+    public int getCodigo(){
+        return codigo;
+    }
+    
+    public void quiensoy(){
+        System.out.println("Soy el PAPA Trabajador");
+    }
+    
+    public double pagoTotal(){
+        return 0;
+    }
+    
+    @Override
+    public String toString(){
+        String cad = codigo + " - " +
+                nombre + " - " + genero;
+        return cad;
+    }
+    
+    public void imprimir(){
+        System.out.println( this );
+    }
  
 }
